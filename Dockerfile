@@ -8,4 +8,6 @@ RUN bundle install
 
 COPY . .
 
-CMD ["./server.rb"]
+EXPOSE 4567
+
+CMD ["ruby", "./server.rb"]
