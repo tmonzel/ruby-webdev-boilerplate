@@ -1,7 +1,5 @@
 build:
   languages:
     - ruby
-  packages:
-    - sinatra
 run:
   web: ruby server.rb
