@@ -3,5 +3,5 @@ require 'sinatra'
 set :bind, '0.0.0.0'
 
 get '/' do
-  'Hello Heroku!'
+  'Hello Heroku v2 is running!'
 end
