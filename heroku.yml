@@ -1,5 +1,3 @@
 build:
-  languages:
-    - ruby
-run:
-  web: ruby server.rb
+  docker:
+    web: Dockerfile
