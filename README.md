@@ -1,1 +1,1 @@
-# Upcoming docker app with 2 services
+# Docker app with 2 services
