@@ -1,3 +1,4 @@
+require 'sinatra/json'
 require 'bundler/setup'
 require 'mysql2'
 require 'active_record'
