@@ -9,18 +9,35 @@
 <body>
   <div class="container">
     <h1 class="my-5">Available Products</h1>
-    <table class="table" data-component="products">
-      <thead>
-        <tr>
-          <th>#</th>
-          <th>Name</th>
-          <th>Price</th>
-        </tr>
-      </thead>
+    <div data-component="products">
+      <table class="table" >
+        <thead>
+          <tr>
+            <th>#</th>
+            <th>Name</th>
+            <th>Price</th>
+            <th>Options</th>
+          </tr>
+        </thead>
 
-      <!-- tbody gets modified by products-component -->
-      <tbody></tbody>
-    </table>
+        <!-- tbody gets modified by products-component -->
+        <tbody></tbody>
+      </table>
+
+      <form>
+        <div class="form-group row">
+          <div class="col">
+            <label for="productName">Name</label>
+            <input id="productName" type="text" class="form-control" name="name" placeholder="Gimme a name!">
+          </div>
+          <div class="col">
+            <label for="productPrice">Price</label>
+            <input id="productPrice" type="text" class="form-control" name="price" placeholder="How much?">
+          </div>
+        </div>
+        <button type="submit" class="btn btn-primary">Add Product</button>
+      </form>
+    </div>
   </div>
 
   <script src="/vendor/zepto/dist/zepto.min.js"></script>
