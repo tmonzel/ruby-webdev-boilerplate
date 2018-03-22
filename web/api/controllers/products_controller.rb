@@ -5,7 +5,7 @@ module Api
     end
 
     get '/api/products' do
-      "Listing all my products"
+      json Product.all
     end
 
     post '/api/products' do
