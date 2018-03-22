@@ -1,6 +1,11 @@
 require 'sinatra'
 require 'sinatra/reloader' if development?
-require_relative 'api/db_config'
-require_relative 'api/movies_controller'
 
-run Api::MoviesController
+# Initializing the api
+require_relative 'api/init'
+
+# Initializing the application
+require_relative 'app/init'
+
+use Api::ProductsController
+run ApplicationController

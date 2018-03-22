@@ -9,6 +9,6 @@ RUN apk update && apk add \
   && bundle install \
   && apk del build-base -r
 
-COPY ./config.ru ./
+COPY . .
 EXPOSE 80
 CMD rackup -p80 --host 0.0.0.0

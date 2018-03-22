@@ -1,7 +1,8 @@
 require 'bundler/setup'
 require 'mysql2'
 require 'active_record'
-require_relative 'models/movie'
+require_relative 'models/product'
+require_relative 'controllers/products_controller'
 
 ActiveRecord::Base.establish_connection(
   adapter: "mysql2",
