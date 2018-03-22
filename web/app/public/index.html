@@ -4,8 +4,26 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Products service</title>
+  <link rel="stylesheet" href="/vendor/bootstrap/dist/css/bootstrap.min.css">
 </head>
 <body>
-  <h1>Provide a products ui</h1>
+  <div class="container">
+    <h1 class="my-5">Available Products</h1>
+    <table class="table" data-component="products">
+      <thead>
+        <tr>
+          <th>#</th>
+          <th>Name</th>
+          <th>Price</th>
+        </tr>
+      </thead>
+
+      <!-- tbody gets modified by products-component -->
+      <tbody></tbody>
+    </table>
+  </div>
+
+  <script src="/vendor/zepto/dist/zepto.min.js"></script>
+  <script src="/index.js"></script>
 </body>
 </html>
